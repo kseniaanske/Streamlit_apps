@@ -29,7 +29,7 @@ if st.session_state.magic_click:
         pass
     elif user_said == "live forever":
         st.header("Great choice! This is how you will look in 100 years...")
-        st.image("https://i.pinimg.com/originals/7d/e8/c9/7de8c90d5ae430d2f74629317f78204b.gif")
+        st.image("https://media4.giphy.com/media/idMsVB8Xva2kjm0FLS/giphy.gif")
     else:
         st.header(f"We're very sorry... {user_said} is currently unavailable.")
         st.image("https://64.media.tumblr.com/16c8b1524422f21fbc3ee39a747a3fc2/tumblr_o3g4d4XzHF1u4rl68o1_500.gifv")

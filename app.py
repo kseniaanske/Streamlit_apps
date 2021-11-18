@@ -1,5 +1,5 @@
 import streamlit as st
-st.title("Ksenia's Magical Story")
+st.title("Get some Streamlit magic!")
 
 if 'magic_click' not in st.session_state:
     st.session_state.magic_click = None

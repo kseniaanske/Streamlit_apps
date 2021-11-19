@@ -1,5 +1,5 @@
 import streamlit as st
-st.title("Get some Streamlit magic!")
+st.title("Get some magic!")
 
 if 'magic_click' not in st.session_state:
     st.session_state.magic_click = None
@@ -19,21 +19,21 @@ if st.session_state.magic_click is None:
 # select = st.checkbox("I want all the magic in the world")
 if st.session_state.magic_click:
     st.image("https://i.pinimg.com/originals/68/8e/9e/688e9eb45c2f5cc82361d5c305ccc0ca.gif")
-    st.header("Congratulations! What magic do you want:")
+    st.header("Congratulations! What magic do you want?")
 
     user_said = st.text_input("I want to...")
     if user_said == "fly":
         st.header("Yay! You can fly!!!")
-        st.image("https://64.media.tumblr.com/a9111782557ab9e1d5250f67997d235f/tumblr_mtxrkvvm0J1s04rsio1_400.gif")
+        st.image("https://media3.giphy.com/media/l0HlTvwNTvPpJVQNG/giphy.gif", caption='Super Powers GIF by WiffleGif')
     elif user_said == "":
         pass
     elif user_said == "live forever":
-        st.header("Great choice! This is how you will look in 100 years...")
+        st.header("Great choice! This is how you'll look in 100 years...")
         st.image("https://media4.giphy.com/media/idMsVB8Xva2kjm0FLS/giphy.gif")
     else:
-        st.header(f"We're very sorry... {user_said} is currently unavailable.")
-        st.image("https://64.media.tumblr.com/16c8b1524422f21fbc3ee39a747a3fc2/tumblr_o3g4d4XzHF1u4rl68o1_500.gifv")
-        st.write("Please have a coffee break ☕ and try again!")
+        st.header(f"We're very sorry... {user_said} was so popular, it sold out and is currently unavailable. Goodbye!")
+        st.image("https://cliply.co/wp-content/uploads/2019/06/391906110_WAVING_HAND_400px.gif")
+        st.write("On the second thought...please have a coffee break ☕ and try again!")
 
     if user_said == "fly" or user_said == "live forever":
         finish = st.download_button("Now, download your magic!", data = "Here is your magic!", file_name = "Your magic is here!")
